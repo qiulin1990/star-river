@@ -1,0 +1,27 @@
+server:
+  port: 9090
+
+log:
+  path: ./log
+
+mybatis:
+  mapper-locations: classpath:cn/cloudwalk/cloud/*.xml
+  config-location: classpath:mybatis-config.xml
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://49.4.51.30:3306/bd_common_db?useSSL=false
+    username: common_rw
+    password: 0F&6%rU%a4lnkUWv
+    filters: stat
+    max-active: 20
+    initial-size: 1
+    max-wait: 60000
+    min-idle: 1
+    validation-query: select 1
+
+otherConfig:
+  kafka-producer-bootstrap-servers: web01:9092,web02:9092,web04:9092
+  kafka-producer-topic-name: te_data_link_monitor
+
