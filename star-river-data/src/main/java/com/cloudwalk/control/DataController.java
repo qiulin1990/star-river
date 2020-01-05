@@ -3,11 +3,12 @@ package com.cloudwalk.control;
 
 
 import com.cloudwalk.constant.Errors;
-import com.cloudwalk.service.DateSink;
 import com.cloudwalk.util.DateUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
@@ -24,32 +25,34 @@ import java.util.Map;
  */
 @Slf4j
 @RestController
-@RequestMapping("/date")
-public class DateSinkController {
-    @Autowired
-    DateSink dateSink;
-
+@RequestMapping("/data")
+public class DataController {
+    @LoadBalanced
+    RestTemplate restTemplate=new RestTemplate();
     /**
      *
-     * @param year
+     * @param id
      * @param httpServletRequest
      * @return
      * @throws IOException
      */
-    @RequestMapping(value = "/call/{year}", method = RequestMethod.GET)
+    @RequestMapping(value = "/select/{id}", method = RequestMethod.GET)
     public @ResponseBody
-    Map<String, String> call(@PathVariable("year") String year, HttpServletRequest httpServletRequest) throws IOException {
+    Map<String, String> call(@PathVariable("id") String id, HttpServletRequest httpServletRequest) throws IOException {
+
         Map<String, String> res = new HashMap<>();
         String status;
         try {
-            status=dateSink.sink(year);
-            res.put("year", year);
+
+            status=restTemplate.getForObject("http://star-river-common/date/call/"+id,String.class);
+            res.put("id", id);
             res.put("status",status);
             res.put("time", DateUtils.getCurrentTime());
-            log.info("res--{}",res);
+            log.info("id--{}",id);
 
         } catch (Exception e) {
-            log.error("error--{},year--{},exception--{}", Errors.fromId(1), year, e.getStackTrace());
+            e.printStackTrace();
+            log.error("error--{},year--{},exception--{}", Errors.fromId(1), id, e.getStackTrace());
         }
         return res;
     }

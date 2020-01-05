@@ -14,7 +14,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class StarRiverCommonApplication {
+public class StarRiverCommonApplication1 {
     /**
      * 工程主方法
      *
@@ -22,6 +22,6 @@ public class StarRiverCommonApplication {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(StarRiverCommonApplication.class, args);
+        SpringApplication.run(StarRiverCommonApplication1.class, args);
     }
 }

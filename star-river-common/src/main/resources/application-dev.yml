@@ -1,5 +1,5 @@
 server:
-  port: 9090
+  port: 9092
 
 log:
   path: ./log
@@ -8,6 +8,15 @@ mybatis:
   mapper-locations: classpath:cn/cloudwalk/cloud/*.xml
   config-location: classpath:mybatis-config.xml
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9091/eureka
+    registerWithEureka: true
+    fetchRegistry: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}:@project.version@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
