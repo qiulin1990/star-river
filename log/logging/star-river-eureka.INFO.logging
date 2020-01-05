@@ -1,0 +1,184 @@
+2020-01-05 20:13:06.650  INFO 19840 --- [-] [main] c.cloudwalk.StarRiverEurekaApplication   : The following profiles are active: dev
+2020-01-05 20:13:07.188  WARN 19840 --- [-] [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-01-05 20:13:07.295  INFO 19840 --- [-] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ddec3cb7-43b7-3902-afaa-b00592e8615e
+2020-01-05 20:13:07.555  INFO 19840 --- [-] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-05 20:13:07.565  INFO 19840 --- [-] [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-05 20:13:07.566  INFO 19840 --- [-] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-05 20:13:07.566  INFO 19840 --- [-] [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-05 20:13:07.683  INFO 19840 --- [-] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-05 20:13:07.684  INFO 19840 --- [-] [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1021 ms
+2020-01-05 20:13:07.742  WARN 19840 --- [-] [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-05 20:13:07.742  INFO 19840 --- [-] [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-05 20:13:07.750  INFO 19840 --- [-] [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@622fdb81
+2020-01-05 20:13:08.674  INFO 19840 --- [-] [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-01-05 20:13:08.726  INFO 19840 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-01-05 20:13:08.727  INFO 19840 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-01-05 20:13:08.815  INFO 19840 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-01-05 20:13:08.815  INFO 19840 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-01-05 20:13:09.056  WARN 19840 --- [-] [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-05 20:13:09.057  INFO 19840 --- [-] [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-05 20:13:09.168  INFO 19840 --- [-] [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-05 20:13:10.391  WARN 19840 --- [-] [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-01-05 20:13:10.433  INFO 19840 --- [-] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-01-05 20:13:10.463  INFO 19840 --- [-] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-01-05 20:13:10.463  INFO 19840 --- [-] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-01-05 20:13:10.468  INFO 19840 --- [-] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1578226390467 with initial instances count: 0
+2020-01-05 20:13:10.496  INFO 19840 --- [-] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2020-01-05 20:13:10.498  INFO 19840 --- [-] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:9090/eureka/]
+2020-01-05 20:13:10.871  INFO 19840 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-01-05 20:13:10.871  INFO 19840 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-01-05 20:13:10.871  INFO 19840 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-01-05 20:13:10.871  INFO 19840 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-01-05 20:13:10.956  INFO 19840 --- [-] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:9090/eureka/
+2020-01-05 20:13:10.962  INFO 19840 --- [-] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2020-01-05 20:13:10.963  INFO 19840 --- [-] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2020-01-05 20:13:10.973  INFO 19840 --- [-] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-05 20:13:11.019  INFO 19840 --- [-] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STAR-RIVER-EUREKA with eureka with status UP
+2020-01-05 20:13:11.020  INFO 19840 --- [-] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2020-01-05 20:13:11.021  INFO 19840 --- [-] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-01-05 20:13:11.021  INFO 19840 --- [-] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2020-01-05 20:13:11.035  INFO 19840 --- [-] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2020-01-05 20:13:11.036  INFO 19840 --- [-] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2020-01-05 20:13:11.036  INFO 19840 --- [-] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2020-01-05 20:13:11.036  INFO 19840 --- [-] [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2020-01-05 20:13:11.036  INFO 19840 --- [-] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2020-01-05 20:13:11.036  INFO 19840 --- [-] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2020-01-05 20:13:11.042  INFO 19840 --- [-] [Thread-11] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2020-01-05 20:13:11.055  INFO 19840 --- [-] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-05 20:13:11.056  INFO 19840 --- [-] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2020-01-05 20:13:11.531  INFO 19840 --- [-] [main] c.cloudwalk.StarRiverEurekaApplication   : Started StarRiverEurekaApplication in 6.731 seconds (JVM running for 7.662)
+2020-01-05 20:14:11.037  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:15:11.037  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:15:25.440  INFO 19840 --- [-] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-05 20:15:25.440  INFO 19840 --- [-] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-05 20:15:25.445  INFO 19840 --- [-] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-01-05 20:15:25.606  INFO 19840 --- [-] [http-nio-9090-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-COMMON/star-river-common:9093:0.0.1-SNAPSHOT with status UP (replication=false)
+2020-01-05 20:15:26.206  INFO 19840 --- [-] [http-nio-9090-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-COMMON/star-river-common:9093:0.0.1-SNAPSHOT with status UP (replication=true)
+2020-01-05 20:15:28.692  INFO 19840 --- [-] [http-nio-9090-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-DATA/star-river-data:9092:0.0.1-SNAPSHOT with status UP (replication=false)
+2020-01-05 20:15:29.205  INFO 19840 --- [-] [http-nio-9090-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-DATA/star-river-data:9092:0.0.1-SNAPSHOT with status UP (replication=true)
+2020-01-05 20:16:11.037  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:17:11.038  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:18:11.039  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:19:11.039  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:20:11.040  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:21:11.040  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:22:11.041  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:23:11.041  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:24:11.042  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:25:11.043  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:26:11.043  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:27:11.043  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:27:22.298  INFO 19840 --- [-] [http-nio-9090-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-DATA/star-river-data:9092:0.0.1-SNAPSHOT with status UP (replication=false)
+2020-01-05 20:27:22.806  INFO 19840 --- [-] [http-nio-9090-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-DATA/star-river-data:9092:0.0.1-SNAPSHOT with status UP (replication=true)
+2020-01-05 20:28:10.963  INFO 19840 --- [-] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2020-01-05 20:28:11.044  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:29:11.045  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:29:24.194  INFO 19840 --- [-] [http-nio-9090-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-DATA/star-river-data:9092:0.0.1-SNAPSHOT with status UP (replication=false)
+2020-01-05 20:29:24.702  INFO 19840 --- [-] [http-nio-9090-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-DATA/star-river-data:9092:0.0.1-SNAPSHOT with status UP (replication=true)
+2020-01-05 20:30:11.046  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-01-05 20:31:11.047  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:32:11.047  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:33:11.047  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:34:11.048  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:35:11.049  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-01-05 20:36:11.050  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:37:11.050  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:38:11.051  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-01-05 20:39:11.052  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:40:11.052  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:41:11.052  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:42:11.052  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:43:10.964  INFO 19840 --- [-] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 5
+2020-01-05 20:43:11.053  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:44:11.054  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:45:11.054  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:46:11.055  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:47:11.055  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:48:11.056  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-01-05 20:49:11.057  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:50:11.057  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:51:11.058  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:52:11.058  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:53:11.059  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:54:11.059  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:55:11.060  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:56:11.061  INFO 19840 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-01-05 20:56:22.800  INFO 20608 --- [-] [main] c.cloudwalk.StarRiverEurekaApplication   : The following profiles are active: dev
+2020-01-05 20:56:23.359  WARN 20608 --- [-] [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-01-05 20:56:23.463  INFO 20608 --- [-] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ddec3cb7-43b7-3902-afaa-b00592e8615e
+2020-01-05 20:56:23.746  INFO 20608 --- [-] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-05 20:56:23.753  INFO 20608 --- [-] [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-05 20:56:23.754  INFO 20608 --- [-] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-05 20:56:23.754  INFO 20608 --- [-] [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-05 20:56:23.866  INFO 20608 --- [-] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-05 20:56:23.867  INFO 20608 --- [-] [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1054 ms
+2020-01-05 20:56:23.925  WARN 20608 --- [-] [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-05 20:56:23.925  INFO 20608 --- [-] [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-05 20:56:23.934  INFO 20608 --- [-] [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@17d32e9b
+2020-01-05 20:56:24.847  INFO 20608 --- [-] [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-01-05 20:56:24.900  INFO 20608 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-01-05 20:56:24.901  INFO 20608 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-01-05 20:56:24.987  INFO 20608 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-01-05 20:56:24.987  INFO 20608 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-01-05 20:56:25.242  WARN 20608 --- [-] [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-05 20:56:25.242  INFO 20608 --- [-] [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-05 20:56:25.343  INFO 20608 --- [-] [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-05 20:56:26.544  WARN 20608 --- [-] [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-01-05 20:56:26.578  INFO 20608 --- [-] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-01-05 20:56:26.601  INFO 20608 --- [-] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-01-05 20:56:26.601  INFO 20608 --- [-] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-01-05 20:56:26.607  INFO 20608 --- [-] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1578228986607 with initial instances count: 0
+2020-01-05 20:56:26.636  INFO 20608 --- [-] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2020-01-05 20:56:26.638  INFO 20608 --- [-] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:9090/eureka/]
+2020-01-05 20:56:27.009  INFO 20608 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-01-05 20:56:27.009  INFO 20608 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-01-05 20:56:27.009  INFO 20608 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-01-05 20:56:27.009  INFO 20608 --- [-] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-01-05 20:56:27.096  INFO 20608 --- [-] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:9090/eureka/
+2020-01-05 20:56:27.102  INFO 20608 --- [-] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2020-01-05 20:56:27.103  INFO 20608 --- [-] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2020-01-05 20:56:27.114  INFO 20608 --- [-] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-05 20:56:27.159  INFO 20608 --- [-] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STAR-RIVER-EUREKA with eureka with status UP
+2020-01-05 20:56:27.161  INFO 20608 --- [-] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2020-01-05 20:56:27.161  INFO 20608 --- [-] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-01-05 20:56:27.162  INFO 20608 --- [-] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2020-01-05 20:56:27.176  INFO 20608 --- [-] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2020-01-05 20:56:27.176  INFO 20608 --- [-] [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2020-01-05 20:56:27.176  INFO 20608 --- [-] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2020-01-05 20:56:27.177  INFO 20608 --- [-] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2020-01-05 20:56:27.177  INFO 20608 --- [-] [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2020-01-05 20:56:27.177  INFO 20608 --- [-] [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2020-01-05 20:56:27.182  INFO 20608 --- [-] [Thread-11] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2020-01-05 20:56:27.195  INFO 20608 --- [-] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-05 20:56:27.196  INFO 20608 --- [-] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2020-01-05 20:56:27.539  INFO 20608 --- [-] [http-nio-9090-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-05 20:56:27.540  INFO 20608 --- [-] [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-05 20:56:27.544  INFO 20608 --- [-] [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-01-05 20:56:27.566  WARN 20608 --- [-] [http-nio-9090-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: STAR-RIVER-DATA - star-river-data:9092:0.0.1-SNAPSHOT
+2020-01-05 20:56:27.566  WARN 20608 --- [-] [http-nio-9090-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): STAR-RIVER-DATA - star-river-data:9092:0.0.1-SNAPSHOT
+2020-01-05 20:56:27.566  WARN 20608 --- [-] [http-nio-9090-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: STAR-RIVER-COMMON - star-river-common:9093:0.0.1-SNAPSHOT
+2020-01-05 20:56:27.566  WARN 20608 --- [-] [http-nio-9090-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Renew): STAR-RIVER-COMMON - star-river-common:9093:0.0.1-SNAPSHOT
+2020-01-05 20:56:27.643  INFO 20608 --- [-] [http-nio-9090-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-COMMON/star-river-common:9093:0.0.1-SNAPSHOT with status UP (replication=false)
+2020-01-05 20:56:27.643  INFO 20608 --- [-] [http-nio-9090-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-DATA/star-river-data:9092:0.0.1-SNAPSHOT with status UP (replication=false)
+2020-01-05 20:56:27.693  INFO 20608 --- [-] [main] c.cloudwalk.StarRiverEurekaApplication   : Started StarRiverEurekaApplication in 6.745 seconds (JVM running for 7.716)
+2020-01-05 20:56:28.234  INFO 20608 --- [-] [http-nio-9090-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-COMMON/star-river-common:9093:0.0.1-SNAPSHOT with status UP (replication=true)
+2020-01-05 20:56:28.234  INFO 20608 --- [-] [http-nio-9090-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-DATA/star-river-data:9092:0.0.1-SNAPSHOT with status UP (replication=true)
+2020-01-05 20:56:51.363  INFO 20608 --- [-] [http-nio-9090-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-COMMON/star-river-common:9093:0.0.1-SNAPSHOT with status UP (replication=false)
+2020-01-05 20:56:51.868  INFO 20608 --- [-] [http-nio-9090-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-COMMON/star-river-common:9093:0.0.1-SNAPSHOT with status UP (replication=true)
+2020-01-05 20:57:22.003  INFO 20608 --- [-] [http-nio-9090-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-DATA/star-river-data:9092:0.0.1-SNAPSHOT with status UP (replication=false)
+2020-01-05 20:57:22.511  INFO 20608 --- [-] [http-nio-9090-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-DATA/star-river-data:9092:0.0.1-SNAPSHOT with status UP (replication=true)
+2020-01-05 20:57:27.178  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:58:27.178  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 20:59:27.179  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 21:00:02.376  INFO 20608 --- [-] [http-nio-9090-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-COMMON/star-river-common:9091:0.0.1-SNAPSHOT with status UP (replication=false)
+2020-01-05 21:00:02.894  INFO 20608 --- [-] [http-nio-9090-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STAR-RIVER-COMMON/star-river-common:9091:0.0.1-SNAPSHOT with status UP (replication=true)
+2020-01-05 21:00:27.179  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 21:01:27.180  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 21:02:27.180  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 21:03:27.181  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 21:04:27.182  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 21:05:27.183  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2020-01-05 21:06:27.184  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 21:07:27.185  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 21:08:27.185  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-01-05 21:09:27.185  INFO 20608 --- [-] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
