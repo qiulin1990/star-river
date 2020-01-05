@@ -1,6 +1,6 @@
 #服务端端口
 server:
-  port: 9091
+  port: 9090
 #日志
 log:
   path: ./log
@@ -13,6 +13,6 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}:@project.version@
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
-    register-with-eureka: true
-    fetch-registry: true
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false

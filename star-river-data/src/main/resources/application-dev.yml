@@ -1,6 +1,6 @@
 #服务端端口
 server:
-  port: 9093
+  port: 9092
 #日志
 log:
   path: ./log
@@ -9,7 +9,7 @@ log:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9091/eureka
+      defaultZone: http://localhost:9090/eureka/
     register-with-eureka: true
     fetch-registry: true
   instance:

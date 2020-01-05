@@ -1,7 +1,6 @@
 package com.cloudwalk.control;
 
 
-
 import com.cloudwalk.constant.Errors;
 import com.cloudwalk.util.DateUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -27,10 +26,10 @@ import java.util.Map;
 @RestController
 @RequestMapping("/data")
 public class DataController {
-    @LoadBalanced
-    RestTemplate restTemplate=new RestTemplate();
+    @Autowired
+    RestTemplate restTemplate;
+
     /**
-     *
      * @param id
      * @param httpServletRequest
      * @return
@@ -44,11 +43,11 @@ public class DataController {
         String status;
         try {
 
-            status=restTemplate.getForObject("http://star-river-common/date/call/"+id,String.class);
+            status = restTemplate.getForObject("http://STAR-RIVER-COMMON/date/call/" + id, String.class);
             res.put("id", id);
-            res.put("status",status);
+            res.put("status", status);
             res.put("time", DateUtils.getCurrentTime());
-            log.info("id--{}",id);
+            log.info("id--{}", id);
 
         } catch (Exception e) {
             e.printStackTrace();

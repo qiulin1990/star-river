@@ -3,6 +3,7 @@ package com.cloudwalk;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * 工程main方法主入口
@@ -13,6 +14,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @since 1.0
  */
 @EnableDiscoveryClient
+@EnableEurekaClient
 @SpringBootApplication
 public class StarRiverCommonApplication {
     /**

@@ -1,5 +1,5 @@
 server:
-  port: 9092
+  port: 9091
 
 log:
   path: ./log
@@ -10,10 +10,10 @@ mybatis:
 
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://localhost:9091/eureka
-    registerWithEureka: true
-    fetchRegistry: true
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9090/eureka/
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${server.port}:@project.version@
