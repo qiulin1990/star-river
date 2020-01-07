@@ -1,0 +1,17 @@
+#服务端端口
+server:
+  port: 9097
+#日志
+log:
+  path: ./log
+
+#配置服务端口URL路径提供客户端使用
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9090/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}:@project.version@
